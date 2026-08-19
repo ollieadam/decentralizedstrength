@@ -1,10 +1,359 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="refresh" content="0; url=https://chsstrengthclub.com">
-<link rel="canonical" href="https://chsstrengthclub.com">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decentralized Strength — A Podcast &amp; Blog on Coaching, Athletics &amp; Career Paths</title>
+<meta name="description" content="Decentralized Strength is a podcast and blog about coaching methods, athletics, and career paths in independent strength and conditioning — for coaches, fitness enthusiasts, and serious-minded athletes. No fluff, no trends.">
+<meta name="robots" content="index, follow">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Decentralized Strength — Coaching Methods, Athletics &amp; Career Paths">
+<meta property="og:description" content="A podcast &amp; blog about coaching methods, athletics, and career paths in independent strength and conditioning. Hosted by Adam Oliver, CSCS. No fluff, no trends.">
+<meta property="og:url" content="https://decentralizedstrength.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://decentralizedstrength.com/logo-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Decentralized Strength">
+<meta name="twitter:description" content="A podcast &amp; blog about coaching methods, athletics, and career paths in independent strength and conditioning.">
+<meta name="twitter:image" content="https://decentralizedstrength.com/logo-cover.png">
+<link rel="canonical" href="https://decentralizedstrength.com/">
+<link rel="icon" type="image/png" href="/logo.png">
+<style>
+:root{
+  --ink:#000000;
+  --paper:#ffffff;
+  --grey:#f4f4f4;
+  --mid:#6b6b6b;
+  --line:#e5e5e5;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:Georgia,'Times New Roman',serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--ink);text-decoration:none}
+.container{max-width:1080px;margin:0 auto;padding:0 1.5rem}
+.mono{font-family:ui-monospace,'SF Mono','Menlo',monospace;letter-spacing:.18em;text-transform:uppercase;font-size:.68rem}
+
+/* NAV */
+header{
+  position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);z-index:50;
+}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.nav-brand{display:flex;align-items:center;gap:.75rem}
+.nav-brand img{height:36px;width:auto;display:block}
+.nav-brand span{font-weight:700;letter-spacing:.02em}
+.nav-links{display:flex;align-items:center;gap:1.6rem;font-size:.9rem}
+.nav-links a:hover{text-decoration:underline;text-underline-offset:4px}
+.nav-cta{background:var(--ink);color:var(--paper);padding:.55rem 1.1rem;font-size:.78rem;letter-spacing:.08em}
+.nav-cta:hover{text-decoration:none;opacity:.85}
+.hamburger{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--ink)}
+@media(max-width:720px){
+  .nav-links{display:none}
+  .hamburger{display:block}
+}
+
+/* HERO */
+.hero{padding:6rem 1.5rem 5rem;text-align:center;border-bottom:1px solid var(--line)}
+.hero img.logo{height:96px;width:auto;margin-bottom:1.5rem}
+.hero .tag{color:var(--mid);margin-bottom:1rem}
+.hero h1{font-size:clamp(2.6rem,7vw,5.2rem);line-height:.95;letter-spacing:-.02em;font-weight:700;margin-bottom:1.25rem}
+.hero p.sub{max-width:640px;margin:0 auto 2rem;font-size:1.15rem;color:#222}
+.hero .rule{width:72px;height:2px;background:var(--ink);margin:0 auto 2rem}
+.hero-actions{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:.8rem 1.6rem;font-size:.82rem;letter-spacing:.08em;border:1px solid var(--ink)}
+.btn-solid{background:var(--ink);color:var(--paper)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.btn-solid:hover{opacity:.85}
+
+/* SECTIONS */
+section{padding:4.5rem 1.5rem}
+section.alt{background:var(--grey);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-head{max-width:720px;margin-bottom:2.5rem}
+.sec-head .kicker{color:var(--mid);margin-bottom:.75rem}
+.sec-head h2{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.02;letter-spacing:-.01em;margin-bottom:.75rem}
+.sec-head p{color:#333}
+
+/* ABOUT SPLIT */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.split h3{font-size:1.15rem;margin-bottom:.75rem}
+.split p{color:#333;font-size:.95rem;margin-bottom:.75rem}
+.split ul{list-style:none;font-size:.92rem;color:#333}
+.split ul li{padding:.3rem 0;border-bottom:1px solid var(--line)}
+.split ul li:last-child{border-bottom:none}
+@media(max-width:720px){.split{grid-template-columns:1fr}}
+
+/* EPISODES */
+.ep-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+.ep{background:var(--paper);padding:1.6rem;display:flex;flex-direction:column;gap:.6rem}
+.ep .ep-num{font-family:ui-monospace,monospace;color:var(--mid);font-size:.72rem;letter-spacing:.14em}
+.ep .ep-thumb{width:100%;aspect-ratio:16/9;object-fit:cover;background:#eee;border:1px solid var(--line)}
+.ep h3{font-size:1.02rem;line-height:1.3;font-weight:600}
+.ep .ep-meta{font-family:ui-monospace,monospace;font-size:.68rem;letter-spacing:.08em;color:var(--mid);text-transform:uppercase}
+.ep p.desc{font-size:.86rem;color:#444;flex:1}
+.ep .ep-link{font-size:.82rem;font-weight:700;border-bottom:1px solid var(--ink);align-self:flex-start}
+.ep .ep-link:hover{opacity:.6}
+@media(max-width:900px){.ep-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.ep-grid{grid-template-columns:1fr}}
+
+/* HOST */
+.host{display:grid;grid-template-columns:200px 1fr;gap:2rem;align-items:start}
+.host .avatar{width:100%;border:1px solid var(--line);background:#eee;display:block}
+.host p{color:#333;font-size:.96rem;margin-bottom:.75rem}
+@media(max-width:640px){.host{grid-template-columns:1fr}.host .avatar{max-width:200px}}
+
+/* BLOG */
+.blog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line)}
+.blog-card{background:var(--paper);padding:1.8rem;display:flex;flex-direction:column;gap:.6rem}
+.blog-card .bc-tag{font-family:ui-monospace,monospace;font-size:.66rem;letter-spacing:.14em;color:var(--mid);text-transform:uppercase}
+.blog-card h3{font-size:1.15rem;line-height:1.3;font-weight:600}
+.blog-card p{font-size:.9rem;color:#444;flex:1}
+.blog-card .bc-meta{font-family:ui-monospace,monospace;font-size:.68rem;color:var(--mid);letter-spacing:.08em;text-transform:uppercase}
+.blog-card .bc-link{font-size:.82rem;font-weight:700;border-bottom:1px solid var(--ink);align-self:flex-start}
+.blog-card:hover{background:#fafafa}
+.blog-card.coming{background:#fafafa;opacity:.9}
+@media(max-width:640px){.blog-grid{grid-template-columns:1fr}}
+
+/* SUBSCRIBE */
+.sub-links{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line)}
+.sub-link{background:var(--paper);padding:1.8rem;display:flex;flex-direction:column;gap:.5rem}
+.sub-link .sl-label{font-family:ui-monospace,monospace;font-size:.66rem;letter-spacing:.16em;color:var(--mid);text-transform:uppercase}
+.sub-link span{font-size:1.05rem;font-weight:700}
+.sub-link .sl-arrow{font-size:1.1rem;transition:transform .2s}
+.sub-link:hover .sl-arrow{transform:translateX(6px)}
+@media(max-width:600px){.sub-links{grid-template-columns:1fr}}
+
+/* CTA BAND */
+.cta-band{background:var(--ink);color:var(--paper);text-align:center;padding:4.5rem 1.5rem}
+.cta-band h2{font-size:clamp(1.9rem,5vw,3rem);line-height:1;margin-bottom:1rem}
+.cta-band p{color:#d6d6d6;max-width:600px;margin:0 auto 2rem}
+.cta-band .btn{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.cta-band .btn:hover{opacity:.88}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:2.5rem 1.5rem;font-size:.85rem;color:var(--mid)}
+footer .container{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
+footer a{color:var(--ink);border-bottom:1px solid var(--line)}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"PodcastSeries",
+  "name":"Decentralized Strength",
+  "description":"A podcast and blog about coaching methods, athletics, and career paths in independent strength and conditioning, hosted by Adam Oliver, CSCS.",
+  "url":"https://decentralizedstrength.com/",
+  "webFeed":"https://www.youtube.com/feeds/videos.xml?channel_id=UCTPsiuyuPRUy_UPGNbaTIRg",
+  "author":{"@type":"Person","name":"Adam Oliver"},
+  "publisher":{"@type":"Organization","name":"Decentralized Strength"}
+}
+</script>
 </head>
 <body>
-<p>Redirecting to <a href="https://chsstrengthclub.com">chsstrengthclub.com</a></p>
+
+<header>
+  <div class="container nav">
+    <a href="/" class="nav-brand"><img src="/logo.png" alt="Decentralized Strength"><span>Decentralized Strength</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#episodes">Episodes</a>
+      <a href="#blog">Blog</a>
+      <a href="#subscribe">Subscribe</a>
+      <a href="https://www.youtube.com/@DecentralizedStrengthpod" class="nav-cta" target="_blank" rel="noopener">Watch on YouTube</a>
+    </nav>
+    <button class="hamburger" onclick="document.getElementById('navLinks').style.display=(document.getElementById('navLinks').style.display==='flex'?'none':'flex');document.getElementById('navLinks').style.flexDirection='column';document.getElementById('navLinks').style.alignItems='flex-start'" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img class="logo" src="/logo.png" alt="Decentralized Strength logo">
+  <p class="mono tag">A Podcast &amp; Blog</p>
+  <h1>Coaching Methods,<br>Athletics &amp; Career Paths.</h1>
+  <div class="rule"></div>
+  <p class="sub">Decentralized Strength is for independent strength &amp; conditioning coaches, fitness enthusiasts, and serious-minded athletes. Real conversations about how we coach, how athletes develop, and how to build a career in this game — no fluff, no trends. New episodes quarterly.</p>
+  <div class="hero-actions">
+    <a href="#episodes" class="btn btn-solid">Latest Episodes</a>
+    <a href="#blog" class="btn btn-ghost">Read the Blog</a>
+  </div>
+</section>
+
+<!-- ABOUT / WHY DIFFERENT -->
+<section id="about">
+  <div class="container">
+    <div class="sec-head">
+      <p class="mono kicker">About</p>
+      <h2>What This Is —<br>And What It Isn't.</h2>
+    </div>
+    <div class="split">
+      <div>
+        <h3>Decentralized Strength</h3>
+        <p>The craft and business of coaching strength &amp; conditioning. Methods, athlete development, career paths, and what it actually takes to go solo and independent. Built for people who think about training for a living — and people who just care about training the right way.</p>
+        <ul>
+          <li>Coaching methods &amp; philosophy</li>
+          <li>Athlete development &amp; sport science</li>
+          <li>Career paths in independent S&amp;C</li>
+          <li>For enthusiasts and serious athletes</li>
+        </ul>
+      </div>
+      <div>
+        <h3>How It Differs from a Local Gym Blog</h3>
+        <p>This isn't a local "workouts and training in one city" blog. It's a national, topic-first show about the ideas behind the work — conversations with coaches, scientists, and athletes who've done it, plus honest journal entries on the coaching life.</p>
+        <ul>
+          <li>Not tied to a single location</li>
+          <li>Topics over promotions</li>
+          <li>First-person, unfiltered writing</li>
+          <li>Guests from across the field</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EPISODES -->
+<section id="episodes" class="alt">
+  <div class="container">
+    <div class="sec-head">
+      <p class="mono kicker">Episodes</p>
+      <h2>The Podcast.</h2>
+      <p>Every episode is an honest conversation with a coach, scientist, or athlete. Watch on YouTube — no account needed, no fluff.</p>
+    </div>
+    <div class="ep-grid" id="episodes"></div>
+  </div>
+</section>
+
+<!-- HOST -->
+<section id="host">
+  <div class="container">
+    <div class="sec-head">
+      <p class="mono kicker">Host</p>
+      <h2>Adam Oliver, CSCS.</h2>
+    </div>
+    <div class="host">
+      <img class="avatar" src="/logo-cover.png" alt="Decentralized Strength">
+      <div>
+        <p>I'm a Certified Strength &amp; Conditioning Specialist. I've trained directly at Mike Boyle Strength &amp; Conditioning alongside coaches of professional and D1 athletes, worked as the strength &amp; conditioning coach for the SC Stingrays pro hockey team, and coached everyone from youth athletes to older adults. I hold a BS in Physical Education &amp; Exercise Science from Norwich University.</p>
+        <p>This podcast is me documenting my evolving coaching philosophy and fitness journey — the methods, the mistakes, and the career path of building this independent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="alt">
+  <div class="container">
+    <div class="sec-head">
+      <p class="mono kicker">Blog</p>
+      <h2>Journal Entries.</h2>
+      <p>Unfiltered writing on coaching and athletics — the kind of honest notes I'd want to read myself.</p>
+    </div>
+    <div class="blog-grid">
+      <a href="/blog/robust-aging.html" class="blog-card">
+        <span class="bc-tag">Journal · Longevity</span>
+        <h3>Robust Aging: Why Senior Fitness Is About a Life You Can Live, Not a Body That Looks Good</h3>
+        <p>Most senior programs are scared of challenge. Here's why I think that's backwards — and what I actually do instead.</p>
+        <span class="bc-meta">May 2026 · 4 min read</span>
+        <span class="bc-link">Read →</span>
+      </a>
+      <a href="/blog/pro-level-results-from-a-park.html" class="blog-card">
+        <span class="bc-tag">Journal · Coaching</span>
+        <h3>The Gym Is Not the Point: Why Pro-Level Results Don't Need a Fancy Facility</h3>
+        <p>After MBSC, the biggest lesson I walked away with wasn't about equipment. It was about systems. Here's what actually develops athletes.</p>
+        <span class="bc-meta">May 2026 · 8 min read</span>
+        <span class="bc-link">Read →</span>
+      </a>
+      <div class="blog-card coming">
+        <span class="bc-tag">Coming Soon</span>
+        <h3>Going Solo: What Independent S&amp;C Actually Costs (and Pays)</h3>
+        <p>The honest math and mindset of building an independent coaching career.</p>
+        <span class="bc-meta">In progress</span>
+      </div>
+      <div class="blog-card coming">
+        <span class="bc-tag">Coming Soon</span>
+        <h3>The First Five Years: A Coach's Journal</h3>
+        <p>Notes from the road — coaching, career, and the long game.</p>
+        <span class="bc-meta">In progress</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBSCRIBE -->
+<section id="subscribe">
+  <div class="container">
+    <div class="sec-head">
+      <p class="mono kicker">Subscribe</p>
+      <h2>Follow Along.</h2>
+    </div>
+    <div class="sub-links">
+      <a href="https://www.youtube.com/@DecentralizedStrengthpod" class="sub-link" target="_blank" rel="noopener">
+        <span class="sl-label">Watch</span>
+        <span>YouTube</span>
+        <span class="sl-arrow">→</span>
+      </a>
+      <a href="https://www.instagram.com/decentralizedstrengthpod" class="sub-link" target="_blank" rel="noopener">
+        <span class="sl-label">Follow</span>
+        <span>Instagram</span>
+        <span class="sl-arrow">→</span>
+      </a>
+      <a href="https://www.facebook.com/decentralizedstrengthpod" class="sub-link" target="_blank" rel="noopener">
+        <span class="sl-label">Follow</span>
+        <span>Facebook</span>
+        <span class="sl-arrow">→</span>
+      </a>
+      <a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCTPsiuyuPRUy_UPGNbaTIRg" class="sub-link" target="_blank" rel="noopener">
+        <span class="sl-label">Feed</span>
+        <span>RSS</span>
+        <span class="sl-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <h2>No Fluff. No Trends.<br>Just the Work.</h2>
+  <p>New episodes quarterly. Subscribe so you don't miss one.</p>
+  <a href="https://www.youtube.com/@DecentralizedStrengthpod" class="btn" target="_blank" rel="noopener">Subscribe on YouTube</a>
+</div>
+
+<footer>
+  <div class="container">
+    <span>© 2026 Decentralized Strength · Hosted by Adam Oliver, CSCS</span>
+    <span><a href="https://www.youtube.com/@DecentralizedStrengthpod" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.instagram.com/decentralizedstrengthpod" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/decentralizedstrengthpod" target="_blank" rel="noopener">Facebook</a></span>
+  </div>
+</footer>
+
+<script>
+const EPISODES = [
+  {v:"omAfHqdldBg", n:"01", title:"Senior Fitness Part 2: What Does a Real Training Program for Older Adults Look Like?", guest:"with Pat VanGalen", date:"Feb 2026", desc:"Mobility, strength, and balance — how to prioritize, and training for independence over aesthetics.", bs:"15382984"},
+  {v:"GWOTotIsFiA", n:"02", title:"Youth Athletic Development from Baby to Elementary School", guest:"with Dr. Elizabeth Wuorinen", date:"Feb 2026", desc:"Motor milestones, early sport specialization, and how to build athleticism in young kids.", bs:"14189755"},
+  {v:"iGhgSXzCarw", n:"03", title:"What's Actually in Your Energy Drink?", guest:"with Zachary Smith of Gladiator Energy", date:"Feb 2026", desc:"Hype vs. science — the ingredients that matter for muscle, brain, and immune function.", bs:"13548762"},
+  {v:"c3do6VvE3mI", n:"04", title:"Can Hard Work Beat Talent?", guest:"with Dr. Elizabeth Wuorinen", date:"Feb 2026", desc:"Sports nutrition, leadership, and the science of athletic potential.", bs:"13139067"},
+  {v:"ZVA_kol0zMA", n:"05", title:"Energy Systems & Muscle Types Explained", guest:"with Dr. Elizabeth Wuorinen", date:"Feb 2026", desc:"The three energy systems and fast- vs. slow-twitch fibers — and how to train them.", bs:"12422764"},
+  {v:"lPCLsRo-64c", n:"06", title:"Physical Education, Active Lifestyles & the Vermont Approach", guest:"with Prof. Thomas Roberge", date:"Feb 2026", desc:"The state of PE and how early movement habits shape lifelong health.", bs:"12246586"},
+  {v:"cGkPUabfPXU", n:"07", title:"Live Long, Die Fast", guest:"with Pat VanGalen", date:"Feb 2026", desc:"Senior fitness, longevity, and training for independence. The philosophy that started it all.", bs:"12196340"},
+  {v:"a4W1TDEhKyk", n:"08", title:"How to Coach Better Athletes & Better Humans", guest:"with Eric Daddario", date:"Feb 2026", desc:"Youth strength, mental toughness, and decision-making on and off the field.", bs:"12139094"},
+  {v:"thhcIEjBHJ8", n:"09", title:"From Stage 3 Cancer to Comeback", guest:"with Matt Ode", date:"Feb 2026", desc:"A raw story of resilience, discipline, and rebuilding strength after everything was taken.", bs:"12126760"}
+];
+const wrap = document.getElementById('episodes');
+EPISODES.forEach(function(ep){
+  const el = document.createElement('div');
+  el.className = 'ep';
+  el.innerHTML =
+    '<span class="ep-num">EP ' + ep.n + '</span>' +
+    '<a href="https://www.youtube.com/watch?v=' + ep.v + '" target="_blank" rel="noopener"><img class="ep-thumb" loading="lazy" src="https://i.ytimg.com/vi/' + ep.v + '/hqdefault.jpg" alt="' + ep.title.replace(/"/g,'&quot;') + '"></a>' +
+    '<h3>' + ep.title + '</h3>' +
+    '<span class="ep-meta">' + ep.guest + ' · ' + ep.date + '</span>' +
+    '<p class="desc">' + ep.desc + '</p>' +
+    '<a class="ep-link" href="https://www.youtube.com/watch?v=' + ep.v + '" target="_blank" rel="noopener">Watch Episode</a>';
+  wrap.appendChild(el);
+});
+</script>
 </body>
 </html>
