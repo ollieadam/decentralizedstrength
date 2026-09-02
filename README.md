@@ -8,7 +8,7 @@ The company landing page for Decentralized Strength LLC — a links portal to al
 
 ## Structure
 - `index.html` — links landing (hero + link cards, SEO meta + JSON-LD Organization)
-- `blog/` — auto-redirect stubs → `decentralizedpod.com/blog/*`
+- `blog/` — auto-redirect stubs → `decentralizedstrengthpod.com/blog/*`
 - `logo.png` / `logo-mark.png` / `logo-cover.png` — new Decentralized Strength brand (evolved hexagon, monochrome)
 - `favicon.png` / `apple-touch-icon.png` — mark icons
 
