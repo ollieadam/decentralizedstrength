@@ -73,6 +73,22 @@ header{
 .card.full p{max-width:560px}
 @media(max-width:680px){.link-grid{grid-template-columns:1fr;gap:18px}}
 
+
+/* PHILOSOPHY */
+.philosophy{padding:4.5rem 1.5rem;border-bottom:1px solid var(--line);background:var(--paper)}
+.philosophy .tag{color:var(--mid);text-align:center;margin-bottom:1rem}
+.philosophy h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.01em;text-align:center;margin-bottom:1.25rem}
+.philosophy .thesis{max-width:640px;margin:0 auto 2.5rem;text-align:center;font-size:1.05rem;color:#222}
+.p-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:960px;margin:0 auto 2.5rem}
+.p-card{border:1px solid var(--line);padding:1.4rem 1.1rem;text-align:center}
+.p-card .num{display:block;color:var(--mid);margin-bottom:.6rem}
+.p-card h3{font-size:1.05rem;margin-bottom:.45rem}
+.p-card p{font-size:.88rem;color:#444}
+.phil-cta{display:inline-block;font-size:.85rem;font-weight:700;letter-spacing:.04em;border-bottom:1px solid var(--ink);margin:0 auto}
+.phil-cta-wrap{text-align:center}
+@media(max-width:800px){.p-grid{grid-template-columns:repeat(2,1fr);gap:.85rem}}
+@media(max-width:480px){.p-grid{grid-template-columns:1fr}}
+
 /* CONTACT */
 .contact{background:var(--grey);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;padding:4rem 1.5rem}
 .contact h2{font-size:clamp(1.5rem,3.5vw,2.2rem);margin-bottom:.75rem}
@@ -108,6 +124,7 @@ footer a{color:var(--ink);border-bottom:1px solid var(--line)}
 <header>
   <div class="container nav">
     <a href="/" class="nav-brand"><img src="/logo.png" alt="Decentralized Strength"></a>
+    <a href="/philosophy.html" class="mono" style="font-size:.7rem">Philosophy</a>
   </div>
 </header>
 
@@ -118,6 +135,41 @@ footer a{color:var(--ink);border-bottom:1px solid var(--line)}
   <h1>Decentralized Strength.</h1>
   <p class="sub">The home of Decentralized Strength LLC — the podcast and blog, the AI tools built for independent coaches, and the gym. Pick a doorway.</p>
   <p class="mono bridge">Self-directed positional trader &amp; investor — blockchain &amp; crypto.</p>
+</section>
+
+
+<!-- PHILOSOPHY -->
+<section class="philosophy" id="philosophy">
+  <div class="container">
+    <p class="mono tag">Philosophy</p>
+    <h2>The 4 P’s</h2>
+    <p class="thesis">Decentralized Strength runs on a quieter stack: Preparation, Practice, Patience, and Positivity — how we coach, invest, train, and show up online. The point is stacking them, not posting them.</p>
+    <div class="p-grid">
+      <div class="p-card">
+        <span class="mono num">01</span>
+        <h3>Preparation</h3>
+        <p>Program before load.</p>
+      </div>
+      <div class="p-card">
+        <span class="mono num">02</span>
+        <h3>Practice</h3>
+        <p>Show up for the boring sets.</p>
+      </div>
+      <div class="p-card">
+        <span class="mono num">03</span>
+        <h3>Patience</h3>
+        <p>Trust the block.</p>
+      </div>
+      <div class="p-card">
+        <span class="mono num">04</span>
+        <h3>Positivity</h3>
+        <p>Coach the next rep.</p>
+      </div>
+    </div>
+    <div class="phil-cta-wrap">
+      <a class="phil-cta" href="https://decentralizedstrengthpod.com/blog/the-4-ps.html" target="_blank" rel="noopener">Read the full essay on the podcast →</a>
+    </div>
+  </div>
 </section>
 
 <!-- LINKS -->
@@ -175,7 +227,7 @@ footer a{color:var(--ink);border-bottom:1px solid var(--line)}
 <footer>
   <div class="container">
     <span>© 2026 Decentralized Strength LLC · Adam Oliver — CSCS coach, software builder &amp; self-directed positional trader/investor in blockchain &amp; crypto</span>
-    <span><a href="https://decentralizedstrengthpod.com" target="_blank" rel="noopener">Pod</a> · <a href="https://strengthclubai.com" target="_blank" rel="noopener">Strength Club AI</a> · <a href="https://chsstrengthclub.com" target="_blank" rel="noopener">Charleston Strength Club</a></span>
+    <span><a href="/philosophy.html">Philosophy</a> · <a href="https://decentralizedstrengthpod.com" target="_blank" rel="noopener">Pod</a> · <a href="https://strengthclubai.com" target="_blank" rel="noopener">Strength Club AI</a> · <a href="https://chsstrengthclub.com" target="_blank" rel="noopener">Charleston Strength Club</a></span>
   </div>
 </footer>
 
