@@ -50,6 +50,10 @@ header{
 .nav-brand{display:flex;align-items:center;gap:.75rem}
 .nav-brand img{height:40px;width:auto;display:block}
 .nav-brand span{font-weight:700;letter-spacing:.02em;font-size:.95rem}
+.nav-links{display:flex;align-items:center;gap:1.25rem}
+.nav-links a{font-family:ui-monospace,'SF Mono','Menlo',monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid transparent;padding-bottom:.15rem}
+.nav-links a:hover,.nav-links a[aria-current="page"]{border-bottom-color:var(--ink)}
+.hero-cta{display:inline-block;margin-top:1.75rem;font-size:.85rem;font-weight:700;letter-spacing:.05em;border-bottom:1px solid var(--ink)}
 
 /* HERO */
 .hero{padding:5.5rem 1.5rem 4.5rem;text-align:center;border-bottom:1px solid var(--line)}
@@ -124,7 +128,10 @@ footer a{color:var(--ink);border-bottom:1px solid var(--line)}
 <header>
   <div class="container nav">
     <a href="/" class="nav-brand"><img src="/logo.png" alt="Decentralized Strength"></a>
-    <a href="/philosophy.html" class="mono" style="font-size:.7rem">Philosophy</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/philosophy.html">Philosophy</a>
+      <a href="#philosophy">The 4 P’s</a>
+    </nav>
   </div>
 </header>
 
@@ -178,6 +185,13 @@ footer a{color:var(--ink);border-bottom:1px solid var(--line)}
     <h2>What You're Looking For</h2>
     <div class="link-grid">
 
+
+      <a class="card" href="/philosophy.html">
+        <span class="cd-tag">Philosophy</span>
+        <h3>The 4 P’s</h3>
+        <p>Preparation · Practice · Patience · Positivity — the quieter stack behind how we coach, invest, train, and show up online.</p>
+        <span class="cd-go">Read the philosophy →</span>
+      </a>
       <a class="card" href="https://decentralizedstrengthpod.com" target="_blank" rel="noopener">
         <span class="cd-tag">Podcast &amp; Blog</span>
         <h3>Decentralized Strength Pod</h3>
