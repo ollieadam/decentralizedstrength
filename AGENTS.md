@@ -2,18 +2,20 @@
 
 ## Project Overview
 
-The company links landing page for Decentralized Strength LLC — the doorway to all sites/services. Hosted by Adam Oliver, CSCS.
+The parent website for Decentralized Strength LLC — holdings doors plus the journal. Hosted by Adam Oliver, CSCS.
 
 **URL:** https://decentralizedstrength.com
 **Repo:** `ollieadam/decentralizedstrength` (GitHub Pages, `main/root`)
 **Deploy:** push to `main` → auto-deploys via GitHub Pages.
 
 ## Purpose
-A **links portal** (not the podcast site). Links: Decentralized Strength Pod, Strength Club AI, Charleston Strength Club, social (`@decentralizedstrengthpod`), and email `decentralizedstrength@gmail.com`. Brand identity includes "self-directed positional trader/investor — blockchain & crypto."
+The **parent website** (not the podcast site). Above the fold: one-line mark + holdings doors (Pod, Strength Club AI, Charleston Strength Club, YouTube, Reach the Coach, Barbie the Pug). Journal / philosophy lives **below the fold**. Essays are canonical on this domain. Brand identity includes "self-directed positional trader/investor — blockchain & crypto."
 
 ## Structure
-- `index.html` — links landing (hero + link cards, SEO meta, JSON-LD Organization). No branded hero images beyond the lockup.
-- `blog/` — meta-refresh redirect stubs → `decentralizedstrengthpod.com/blog/<same>` (auto-redirect).
+- `index.html` — parent shell (one-line mark, holdings doors, journal list). SEO meta + JSON-LD Organization.
+- `site.css` — cream paper `#f7f4ef`, ink `#000`, greys only. Georgia/Times + ui-monospace kickers. No red.
+- `blog/` — essays that live here (`the-4-ps`, `robust-aging`, `pro-level-results-from-a-park`). Canonicals on `decentralizedstrength.com`.
+- `philosophy.html` — short 4 P’s stack; links to the essay on this domain.
 - `logo.png` / `logo-mark.png` / `logo-cover.png` — new Decentralized Strength brand (**evolved hexagon**, monochrome, landing-only).
 - `favicon.png` / `apple-touch-icon.png` — hexagon mark icons.
 - `CNAME`, `sitemap.xml`, `README.md`, GSC token.
