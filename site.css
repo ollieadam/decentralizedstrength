@@ -1,5 +1,5 @@
 /* Decentralized Strength parent shell
-   Tokens: cream paper ~#f7f4ef, ink #000, greys only. No red. */
+   Tokens: paper #f7f4ef, ink #000000, wash #efebe4, mid #6b6b6b, line #e5e5e5. No red. */
 :root{
   --paper:#f7f4ef;
   --ink:#000000;
@@ -43,8 +43,7 @@ header{
   min-width:0;
 }
 .mark img{
-  height:26px;width:auto;display:block;
-  mix-blend-mode:multiply;
+  height:28px;width:auto;display:block;
 }
 .mark span{
   font-size:.95rem;
