@@ -301,3 +301,85 @@ footer a:hover{border-bottom-color:var(--ink)}
   .p-grid{grid-template-columns:1fr}
   .mark img{height:52px}
 }
+
+/* Offer — H2H AI */
+.offer{
+  padding:3.5rem 0 3rem;
+  border-top:1px solid var(--line);
+}
+.offer .kicker{color:var(--mid);margin-bottom:.7rem}
+.offer h2{
+  font-size:clamp(1.55rem,3.2vw,2.1rem);
+  font-weight:400;
+  line-height:1.2;
+  margin-bottom:.85rem;
+}
+.offer .lede{
+  color:var(--soft);
+  font-size:1.05rem;
+  max-width:36rem;
+  margin-bottom:1.75rem;
+}
+.offer-list{list-style:none;border-top:1px solid var(--line);margin-bottom:1.25rem}
+.offer-list li{
+  display:grid;
+  grid-template-columns:7.5rem 1fr;
+  gap:1rem;
+  padding:1.1rem 0;
+  border-bottom:1px solid var(--line);
+  align-items:baseline;
+}
+.offer-price{
+  font-family:ui-monospace,'SF Mono','Menlo',monospace;
+  font-size:1.05rem;
+  letter-spacing:.02em;
+}
+.offer-copy{color:var(--soft)}
+.offer-note{
+  color:var(--mid);
+  font-size:.92rem;
+  margin-bottom:1.1rem;
+}
+.offer-cta a{
+  border-bottom:1px solid var(--ink);
+  padding-bottom:.08rem;
+}
+.offer-cta a:hover{opacity:.7}
+.offer-or{color:var(--mid)}
+
+/* Proof cards */
+.proof{
+  padding:3rem 0 3.5rem;
+  border-top:1px solid var(--line);
+}
+.proof .kicker{color:var(--mid);margin-bottom:.7rem}
+.proof h2{
+  font-size:clamp(1.55rem,3.2vw,2.1rem);
+  font-weight:400;
+  line-height:1.2;
+  margin-bottom:1.5rem;
+}
+.proof-list{list-style:none;border-top:1px solid var(--line)}
+.proof-card{
+  display:grid;
+  gap:.35rem;
+  padding:1.2rem 0;
+  border-bottom:1px solid var(--line);
+}
+.proof-meta{color:var(--mid)}
+.proof-title{
+  font-size:1.2rem;
+  line-height:1.3;
+}
+.proof-card:hover .proof-title{box-shadow:inset 0 -1px 0 var(--ink)}
+.proof-deck{color:var(--soft);font-size:.98rem;max-width:38rem}
+.proof-go{
+  font-family:ui-monospace,'SF Mono','Menlo',monospace;
+  font-size:.68rem;
+  letter-spacing:.08em;
+  color:var(--mid);
+  margin-top:.15rem;
+}
+@media (max-width:560px){
+  .offer-list li{grid-template-columns:1fr;gap:.25rem}
+}
