@@ -136,9 +136,15 @@
     <p class="mono kicker">Human-to-human AI</p>
     <h2>Build with you. Host if you want.</h2>
     <ul class="offer-list">
-      <li>
+      <li class="offer-build">
         <span class="offer-price">$25</span>
         <span class="offer-copy">Build with you — we stand up your idea together.</span>
+        <div class="offer-buy">
+          <stripe-buy-button
+            buy-button-id="buy_btn_1UHllOLh5RxF4eLQZatWIrjy"
+            publishable-key="pk_live_51OcbZVLh5RxF4eLQ0TFh6YqfAon34ZY8diOx15tSs9caYU8RyCH2O1p62GGz2Kuj6RG8JwYpej4wMQsgVreoKUan00cqS2WFWG">
+          </stripe-buy-button>
+        </div>
       </li>
       <li>
         <span class="offer-price">$25/mo</span>
@@ -249,5 +255,6 @@
   </div>
 </footer>
 
+<script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </body>
 </html>
