@@ -11,9 +11,9 @@ The parent website for Decentralized Strength LLC — holdings doors plus the jo
 - `site.css` — cream paper shell (shared by index, philosophy, essays)
 - `philosophy.html` — the 4 P’s stack
 - `blog/` — essays that live on this domain (canonicals on `.com`)
-- `logo-hex-barbell.png` — header mark (hex + barbell, from the pod lockup)
-- `logo.png` / `logo-mark.png` / `logo-cover.png` — evolved hexagon, monochrome (og/favicon)
-- `favicon.png` / `apple-touch-icon.png` — mark icons
+- `logo.png` — shared hex+barbell lockup (same file as decentralizedstrengthpod.com/logo.png)
+- `logo-cover.png` — og:image 1200×630, mark-only
+- `logo-mark.png` / `favicon.png` / `apple-touch-icon.png` — mark icons
 
 ## Visual tokens
 Cream paper `#f7f4ef`, ink `#000000`, wash `#efebe4`, mid `#6b6b6b`, line `#e5e5e5`. Georgia/Times body. `ui-monospace` uppercase kickers. No red.

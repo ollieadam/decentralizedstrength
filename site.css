@@ -39,18 +39,12 @@ header{
   padding:.85rem 0;
 }
 .mark{
-  display:flex;align-items:center;gap:.7rem;
+  display:flex;align-items:center;
   min-width:0;
 }
 .mark img{
-  height:28px;width:auto;display:block;
-}
-.mark span{
-  font-size:.95rem;
-  letter-spacing:.01em;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
+  height:48px;width:auto;display:block;
+  mix-blend-mode:multiply;
 }
 .nav-links{display:flex;align-items:center;gap:1.15rem}
 .nav-links a{
@@ -67,7 +61,7 @@ header{
 
 /* Holdings doors — first screen */
 .doors{
-  min-height:calc(100svh - 3.4rem);
+  min-height:calc(100svh - 5rem);
   padding:2.75rem 0 4rem;
   display:flex;
   flex-direction:column;
@@ -305,5 +299,5 @@ footer a:hover{border-bottom-color:var(--ink)}
   }
   .door-go{text-align:left}
   .p-grid{grid-template-columns:1fr}
-  .mark span{font-size:.88rem}
+  .mark img{height:42px}
 }

@@ -16,13 +16,14 @@ The **parent website** (not the podcast site). Above the fold: one-line mark + h
 - `site.css` — cream paper `#f7f4ef`, ink `#000000`, wash `#efebe4`, mid `#6b6b6b`, line `#e5e5e5`. Georgia/Times + ui-monospace kickers. No red.
 - `blog/` — essays that live here (`the-4-ps`, `robust-aging`, `pro-level-results-from-a-park`). Canonicals on `decentralizedstrength.com`.
 - `philosophy.html` — short 4 P’s stack; links to the essay on this domain.
-- `logo.png` / `logo-mark.png` / `logo-cover.png` — new Decentralized Strength brand (**evolved hexagon**, monochrome, landing-only).
-- `favicon.png` / `apple-touch-icon.png` — hexagon mark icons.
+- `logo.png` — **same hex+barbell lockup as the podcast site** (`decentralizedstrengthpod.com/logo.png`). Used in header + JSON-LD.
+- `logo-cover.png` — og:image at **1200×630, mark-only** (kept consistent with the pod + SCAI logo-only previews).
+- `logo-mark.png` / `favicon.png` / `apple-touch-icon.png` — mark icons.
 - `CNAME`, `sitemap.xml`, `README.md`, GSC token.
 
 ## Brand rules
 - Domain strings: **`decentralizedstrength.com`** (this site) and **`decentralizedstrengthpod.com`** (pod). Do NOT use the old `decentralizedpod.com`. Grep before shipping.
-- The landing uses its **own** evolved-hexagon mark — the podcast mark belongs to the pod site and stays over there.
+- **Same logo on both sites:** parent `/logo.png` is the podcast hex+barbell lockup. Do not ship a second mark for the parent header.
 - `logo-cover.png` is the og:image at **1200×630, mark-only** (kept consistent with the pod + SCAI logo-only previews).
 
 ## Logo generator
