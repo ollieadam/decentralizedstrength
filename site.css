@@ -402,3 +402,8 @@ footer a:hover{border-bottom-color:var(--ink)}
   max-width:34rem;
 }
 .doors{min-height:auto;padding-top:1.5rem}
+
+/* Stripe buy button under $25 build */
+.offer-build{align-items:start}
+.offer-buy{grid-column:1 / -1;margin-top:.65rem}
+.offer-buy stripe-buy-button{display:block;max-width:320px}
