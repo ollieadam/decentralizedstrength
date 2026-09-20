@@ -11,7 +11,8 @@ The parent website for Decentralized Strength LLC — holdings doors plus the jo
 - `site.css` — cream paper shell (shared by index, philosophy, essays)
 - `philosophy.html` — the 4 P’s stack
 - `blog/` — essays that live on this domain (canonicals on `.com`)
-- `logo.png` / `logo-mark.png` / `logo-cover.png` — evolved hexagon, monochrome
+- `logo-hex-barbell.png` — header mark (hex + barbell, from the pod lockup)
+- `logo.png` / `logo-mark.png` / `logo-cover.png` — evolved hexagon, monochrome (og/favicon)
 - `favicon.png` / `apple-touch-icon.png` — mark icons
 
 ## Visual tokens
