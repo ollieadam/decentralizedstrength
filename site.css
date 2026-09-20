@@ -383,3 +383,22 @@ footer a:hover{border-bottom-color:var(--ink)}
 @media (max-width:560px){
   .offer-list li{grid-template-columns:1fr;gap:.25rem}
 }
+
+/* Hero — quiet operator */
+.hero{
+  padding:3.25rem 0 1.5rem;
+}
+.hero .kicker{color:var(--mid);margin-bottom:.85rem}
+.hero h1{
+  font-size:clamp(1.65rem,3.6vw,2.35rem);
+  font-weight:400;
+  line-height:1.22;
+  max-width:22ch;
+  margin-bottom:.9rem;
+}
+.hero .lede{
+  color:var(--soft);
+  font-size:1.12rem;
+  max-width:34rem;
+}
+.doors{min-height:auto;padding-top:1.5rem}
