@@ -13,7 +13,7 @@ The **parent website** (not the podcast site). Above the fold: one-line mark + h
 
 ## Structure
 - `index.html` — parent shell (one-line mark, holdings doors, journal list). SEO meta + JSON-LD Organization.
-- `site.css` — cream paper `#f7f4ef`, ink `#000`, greys only. Georgia/Times + ui-monospace kickers. No red.
+- `site.css` — cream paper `#f7f4ef`, ink `#000000`, wash `#efebe4`, mid `#6b6b6b`, line `#e5e5e5`. Georgia/Times + ui-monospace kickers. No red.
 - `blog/` — essays that live here (`the-4-ps`, `robust-aging`, `pro-level-results-from-a-park`). Canonicals on `decentralizedstrength.com`.
 - `philosophy.html` — short 4 P’s stack; links to the essay on this domain.
 - `logo.png` / `logo-mark.png` / `logo-cover.png` — new Decentralized Strength brand (**evolved hexagon**, monochrome, landing-only).

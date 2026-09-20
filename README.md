@@ -15,6 +15,6 @@ The parent website for Decentralized Strength LLC — holdings doors plus the jo
 - `favicon.png` / `apple-touch-icon.png` — mark icons
 
 ## Visual tokens
-Cream paper `#f7f4ef`, ink `#000`, greys only. Georgia/Times body. `ui-monospace` uppercase kickers. No red.
+Cream paper `#f7f4ef`, ink `#000000`, wash `#efebe4`, mid `#6b6b6b`, line `#e5e5e5`. Georgia/Times body. `ui-monospace` uppercase kickers. No red.
 
 Doors: Podcast, Strength Club AI, Charleston Strength Club, YouTube, Reach the Coach, Barbie the Pug.

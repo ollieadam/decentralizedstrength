@@ -3,10 +3,10 @@
 :root{
   --paper:#f7f4ef;
   --ink:#000000;
-  --mid:#5c5c5c;
+  --mid:#6b6b6b;
   --soft:#3a3a3a;
-  --line:#d8d2c8;
-  --wash:#efeae3;
+  --line:#e5e5e5;
+  --wash:#efebe4;
   --header:rgba(247,244,239,.94);
 }
 *{box-sizing:border-box;margin:0;padding:0}
