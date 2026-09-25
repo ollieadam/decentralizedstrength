@@ -293,6 +293,8 @@ footer a{color:var(--ink);border-bottom:1px solid var(--line)}
 footer a:hover{border-bottom-color:var(--ink)}
 
 @media(max-width:680px){
+  .nav{flex-wrap:wrap;row-gap:.45rem}
+  .nav-links{flex-wrap:wrap;justify-content:flex-end;row-gap:.35rem;column-gap:.85rem}
   .door{
     grid-template-columns:1fr;
     gap:.35rem;
@@ -300,7 +302,56 @@ footer a:hover{border-bottom-color:var(--ink)}
   .door-go{text-align:left}
   .p-grid{grid-template-columns:1fr}
   .mark img{height:52px}
+  .anvil-panel{
+    grid-template-columns:5.75rem 1fr;
+    gap:.75rem 1rem;
+    align-items:start;
+    padding:1rem 1rem 1.1rem;
+  }
+  .anvil-mark{width:5.75rem;height:3.4rem}
 }
+
+/* Anvil — local-first operator tool (not a holding door) */
+.anvil{
+  padding:2.75rem 0 3rem;
+  border-top:1px solid var(--line);
+}
+.anvil-panel{
+  display:grid;
+  grid-template-columns:7.5rem 1fr;
+  gap:.35rem 1.35rem;
+  align-items:center;
+  border:1px solid var(--line);
+  background:var(--paper);
+  padding:1.15rem 1.25rem 1.25rem;
+}
+.anvil-mark{
+  width:7.5rem;
+  height:4.4rem;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+.anvil .kicker{color:var(--mid);margin-bottom:.45rem}
+.anvil h2{
+  font-size:clamp(1.55rem,3.2vw,2.1rem);
+  font-weight:400;
+  line-height:1.2;
+}
+.anvil-body{
+  color:var(--soft);
+  font-size:1.02rem;
+  max-width:38rem;
+  margin-top:.7rem;
+}
+.anvil-note{
+  color:var(--mid);
+  font-size:.92rem;
+  max-width:40rem;
+  margin-top:.65rem;
+}
+.anvil-note a{color:var(--ink);border-bottom:1px solid var(--line)}
+.anvil-note a:hover{border-bottom-color:var(--ink)}
 
 /* Offer — H2H AI */
 .offer{
