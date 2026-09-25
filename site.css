@@ -46,7 +46,7 @@ header{
   height:64px;width:auto;display:block;
   mix-blend-mode:multiply;
 }
-.nav-links{display:flex;align-items:center;gap:1.15rem}
+.nav-links{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:.7rem 1.15rem}
 .nav-links a{
   font-family:ui-monospace,'SF Mono','Menlo',monospace;
   font-size:.68rem;
@@ -300,6 +300,8 @@ footer a:hover{border-bottom-color:var(--ink)}
   .door-go{text-align:left}
   .p-grid{grid-template-columns:1fr}
   .mark img{height:52px}
+  .nav{align-items:flex-start}
+  .anvil-lockup{grid-template-columns:4.25rem 1fr;gap:.85rem 1rem}
 }
 
 /* Offer — H2H AI */
@@ -407,3 +409,58 @@ footer a:hover{border-bottom-color:var(--ink)}
 .offer-build{align-items:start}
 .offer-buy{grid-column:1 / -1;margin-top:.65rem}
 .offer-buy stripe-buy-button{display:block;max-width:320px}
+
+/* Anvil — operator desk for the LLC, not a holding */
+.anvil{
+  padding:3.25rem 0 3.5rem;
+  border-top:1px solid var(--line);
+}
+.anvil .kicker{color:var(--mid);margin-bottom:1.15rem}
+.anvil-lockup{
+  display:grid;
+  grid-template-columns:5.5rem 1fr;
+  gap:1.1rem 1.4rem;
+  align-items:start;
+}
+.anvil-mark{
+  width:5.5rem;
+  height:auto;
+  display:block;
+}
+.anvil h2{
+  font-size:clamp(1.55rem,3.2vw,2.1rem);
+  font-weight:400;
+  line-height:1.15;
+  letter-spacing:-.015em;
+  margin-bottom:.5rem;
+}
+.anvil .lede{
+  color:var(--soft);
+  font-size:1.05rem;
+  max-width:36rem;
+}
+.anvil-limit{
+  color:var(--mid);
+  font-size:.92rem;
+  max-width:36rem;
+  margin-top:.7rem;
+}
+.anvil-cta{margin-top:1rem}
+.anvil-cta a{
+  border-bottom:1px solid var(--ink);
+  padding-bottom:.08rem;
+}
+.anvil-cta a:hover{opacity:.7}
+.anvil-marks{
+  display:flex;
+  gap:1rem;
+  margin-top:1.75rem;
+}
+.anvil-marks img{
+  width:7.5rem;
+  height:7.5rem;
+  display:block;
+}
+.anvil-page .phil-hero{border-bottom:none;padding-bottom:1.25rem}
+.anvil-page .stack{padding-top:0}
+.anvil-page .stack .anvil-limit{margin-top:1.5rem}

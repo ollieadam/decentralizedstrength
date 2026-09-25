@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Blacksmith anvil">
+  <title>Blacksmith anvil</title>
+  <path fill="#000000" d="M 12 62
+C 18 50, 34 46, 50 48
+L 54 48 L 54 40
+L 108 40
+L 112 40 L 112 48
+L 112 56
+L 104 56
+L 98 66
+L 88 66
+L 82 94
+L 108 94
+L 112 100 L 112 108
+L 28 108 L 28 100
+L 34 94
+L 56 94
+L 62 66
+L 52 66
+L 48 56
+L 36 56
+C 24 56, 16 58, 12 62
+Z"/>
+</svg>
